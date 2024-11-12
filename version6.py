@@ -21,6 +21,7 @@ while True:
             break
         else:
             print("Wrong!")
+            
             if user_number > magic_number:
                 print("Too high!")
             elif user_number < magic_number:
@@ -38,14 +39,14 @@ while True:
     
     play_again = input("Do you want to play again? (y/n)") == "y"
     if not play_again:
-        print("Goodbye!")
+        print("Thank you for playing!")
         break
     
     magic_number = rd.randint(1,100)
     counter = 0
-    guesses = []
+    guess_list = []
 
     print("==== Scoreboard ====")
     print(f"{player_score}-{computer_score}")
     print("====================")
-
+    
